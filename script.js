@@ -60,8 +60,8 @@ document.addEventListener('mousemove', (e) => {
                             buttonLayer.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
                         }
                     }
+                    if (window.innerWidth > 768) { // Ефект працює тільки на екранах більше 768px
+                        handleParallax(event);
+                    }
+                });
                 }
-            }
-        }
-    });
-});
